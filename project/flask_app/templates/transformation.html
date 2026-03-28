@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Transformation</h3>
+
+<form method="POST">
+    <input name="product" placeholder="Product Name" class="form-control mb-2">
+
+    <textarea name="summary" placeholder="Summary" class="form-control mb-2"></textarea>
+
+    <input name="tags" placeholder="tag1, tag2" class="form-control mb-2">
+
+    <button class="btn btn-warning">Apply</button>
+</form>
+
+{% if message %}
+<div class="alert alert-success mt-3">
+    {{ message }}
+</div>
+{% endif %}
+{% endblock %}

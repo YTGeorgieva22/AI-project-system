@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Personalization</h3>
+
+<h5>Create User</h5>
+<form method="POST">
+    <input type="hidden" name="action" value="create">
+    <input name="user_id" placeholder="User ID" class="form-control mb-2">
+
+    <input name="categories" placeholder="Categories (Electronics)" class="form-control mb-2">
+    <input name="budget" placeholder="Budget (100-300)" class="form-control mb-2">
+    <input name="brands" placeholder="Brands" class="form-control mb-2">
+
+    <button class="btn btn-success">Create</button>
+</form>
+
+<hr>
+
+<h5>Get Recommendations</h5>
+<form method="POST">
+    <input type="hidden" name="action" value="recommend">
+    <input name="user_id" placeholder="User ID" class="form-control mb-2">
+    <button class="btn btn-primary">Get Recommendations</button>
+</form>
+
+{% if recommendations %}
+<h5 class="mt-4">Results:</h5>
+<ul class="list-group">
+    {% for p in recommendations %}
+    <li class="list-group-item">
+        <strong>{{ p.name }}</strong> - ${{ p.price }} ⭐ {{ p.rating }}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

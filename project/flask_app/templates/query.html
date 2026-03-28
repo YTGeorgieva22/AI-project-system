@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Ask a Question</h3>
+
+<form method="POST">
+    <input type="text" name="question" class="form-control" placeholder="Ask something..." required>
+    <button class="btn btn-primary mt-2">Ask</button>
+</form>
+
+{% if answer %}
+<div class="mt-4 alert alert-info">
+    {{ answer }}
+</div>
+{% endif %}
+{% endblock %}
