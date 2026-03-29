@@ -178,6 +178,7 @@ For detailed technical documentation, see: `TECHNICAL_REPORT.md`
 For Weaviate resources:
 - [Weaviate Docs](https://weaviate.io/developers/weaviate)
 - [Agents Docs](https://docs.weaviate.io/agents)
+- [Documentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/ytgeorgieva22_codingburgas_bg/IQDds3gfvyMIS6WxiFSu5_bNARVFVdkk7Yhr6OJVy9PCDkk?e=Xu6aFg)
 
 ---
 
